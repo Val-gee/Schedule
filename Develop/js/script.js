@@ -2,7 +2,6 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 var saveButton = $(".saveBtn");
-var hour = $('.hour');
 
 var textArea = $('.description');
 var date = $('#currentDay');
@@ -65,15 +64,15 @@ var todaysTime = dayjs().format('hh:mm:ss a');
 time.text(todaysTime);
 }
 
-function displayValue(){
-  textArea.empty();
+// function displayValue(){
+//   textArea.empty();
 
 
-}
+// }
 
 saveButton.on('click', handleDescriptionSave);
 
-displayValue();
+// displayValue();
 displayDate();
 displayTime();
 setInterval(displayTime, 1000);
